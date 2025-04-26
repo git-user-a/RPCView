@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<Title>RPCView</Title>
+</HEAD>
+<BODY>
+  <table width="760" border="0" align="center" cellpadding="0" cellspacing="10"  bgcolor="#FFFBEF">
+    <tr>
+        <td> <br><a href="https://github.com/git-user-a"> <img height=100 valign="top" src="Help\zz.PNG" /></a></td>
+        <td align="right" valign=""><h1><i>RPCView</i></h1>
+          2025.4.22
+        </td>
+    </tr>
+    <tr > <td  colspan=2 bgcolor="#F0F0D0"> <h3> <a name="Overview">Overview</a></h3></td></tr>
+    <tr>
+        <td/>
+        <td>
+          <p>
+          <p>The RPCView application allows users:
+
+          <li> Review, edit or create  RPC descriptions
+          <li> Register RPC with the applicationon context
+          <li> Perform Testing of RPC
+          <li> Review RPC implementation
+            <p>
+              <p>Application uses FileMan Delphi Components (FMDC) library to access VistA files.
+                The information about files structure is provided by custom <a HREf="#RPC">RPC</A>.
+
+                <p>The application configuration file contains values of the user
+                <a HREF="#PREFERENCES">preferences</a> and connection descriptors (IP,Port etc.)
+          </td>
+    </tr>
+    <tr> <td  colspan=2 bgcolor="#F0F0D0"> <h3> Quick Start</h3></td></tr>
+    <tr>
+      <td valign="top"><h4> Starting the application</h4> </td>
+      <td>
+        Start application as any Windows executable -
+        by double clicking the executable file name or using the shortcut.
+        <p>
+        At the startup the application loads configuration data from the confirguration file.
+        <p>
+        By default the configuration file is taken from the "AppData/FMView" directory.
+        User may specify another location as the "config"
+        parameter added to the shortcut target line:
+        <p>
+        <pre>
+          /config=MyConfig.cfg
+        </pre>
+        <p>
+        <img src="Help\Shortcut.PNG"/>
+        <p>
+        <p>If the configuration file contains access and verify codes
+        values of codes are saved encrypted with the application "Master password".
+        <p>Enter "Master Password" to decrypt connection parameters:
+        <p><img src="Help\MasterPassword.PNG"/>
+      </td>
+    </tr>
+    <tr>
+        <td valign ="top"><h4>Connection to a server</h4> </td>
+        <td>
+          <p> The "Select Server" dialog is opened automatically after master password is entered.
+          <p> <img src="Help\SelectAccount.PNG"/>
+          <p> To modify list of servers use "Edit", "Add", or "Delete" buttons.
+          <p> To connect an account - double click corresponding line of the list or click "Select" button.
+          <p> Upon successful connection the IP address and port of the server will be shown on the application main window status bar.
+          <p> Create an RPC group and add RPC to the group. 
+          <p> To review and test an RPC select its name in the RPC List 
+
+        </td>
+    </tr>
+    <tr> <td  colspan=2 bgcolor="#F0F0D0"> <h3>User Interface</h3></td></tr>
+    <tr>
+        <td valign="top"><h4><a name="LAYOUT">Screen Layout</a></h4> </td>
+        <td>
+          Main application window consists of:
+          <p>
+          <li> Application Toolbar</li>
+          <li> RPC List</li>
+          <li> Information panel</li>
+          <li> Status bar</li>
+<p>
+          <img src="Help\toolbar.PNG"/>
+          <p>
+            Application Toolbar provides quick access to main application functions.
+            Buttons dublicate application main menu. Hints shortly describes button purpose.
+          <p>
+            <img src="Help\RPCList.PNG"/>
+          <p>
+            RPC List presents RPC names selected by user. RPC Names are saved in groups.
+            List is saved in the application configuration file and reloaded on the application startup.
+            Toolbar of the RPC List provides quick access to list editing functions.
+          <p>
+              Note that list is not linked to any account - it stays the same regarles of server selected for connection.
+          <p>
+            <img src="Help\InfoPanel.PNG"/>
+          <p> Inormation panel occupises most of the application window.
+            Tabs located in the bottom area of the panel represent different aspects of the RPC:
+            <UL>
+              <li> Description</li>
+              <li> Tester </li>
+              <li> RPC Description editor </li>
+              <li> Implementation routine </li>
+            </ul>
+          Description tab - contains RPC description from file #8994
+          <p> Tester tab allows perform simple testing - entering parameters and execution of RPCView
+          <p> RPC Description editor allows edit RPC record in file #8994.
+          <p> Implementation routine - access to the source code of the implementation routine.
+        </td>
+    </tr>
+
+     <tr>
+         <td valign="top"><h4><a name="OVERVIEW">RPC Overview</a></h4> </td>
+         <td>
+           <p> To review an RPC select an item in the RPC List:
+          <p> <img src="Help\MainWindow.PNG"/>
+          <p>
+            <P>RPC are kept in the "groups".
+              To add a new RPC Group use <img src="Help\RButton.PNG"/> button of the RPC list toolbar.
+
+          <p> To addan RPC to the list use "+" button on the "RPC list toolbar: <img src="Help\RPCListToolbar.PNG"/>.
+          <p>Note: Buttons are disabled untill you connect to an acount.
+          <p>The RPC Selection dialog provides 2 options for selection:
+          <li>By Name</li>
+          <li>By Application Context</li>
+
+          <p><img src="Help\RPCSelectByName.PNG"/>
+          <p><img src="Help\RPCSelectByContext.PNG"/>
+
+          <P> RPC Selection dialog allows review RPC Desctiption from the "Remote Procedure" file (#8994)
+
+<p> To add RPC to the group:
+  double clicking the RPC name. You can also checkmark several RPC names and click "Select" button.
+
+         </td>
+     </tr>
+     <tr>
+         <td valign="top"><h4>RPC Testing</h4> </td>
+         <td>
+           <p> To test RPC - select "Test" tab:
+          <p> <img src="Help\TestView.PNG"/>
+          <p> Parameters for the RPC execution can be entered in the input fields
+            located at the top of the window. List of parameters will be created
+            based on the RPC description in "remote Procedure"file (#8994).
+            In case the description is incomplete - use buttons to add additional parameters.
+          <p> Buttons ... allow change order of the parameters.
+          <p> If needed - enter Application context in the corresponding input field.
+          <p> To execute RPC click "Exec"button
+          <p> Results of the execution will be shown in the area below the parameters.
+          <p>Note: copy of the execution results is saved in the application Log
+         </td>
+     </tr>
+     <tr>
+         <td valign="top"><h4>RPC Description</h4> </td>
+         <td>
+           <p> RPC definition is presented on the "Descriptior" tab:
+          <p> <img src="Help\DescriptionEdit.PNG"/>
+          <p>
+         </td>
+     </tr>
+
+     <tr>
+         <td valign="top"><h4>RPC Implementation</h4> </td>
+         <td>
+           <p> To review an RPC source - select routine tab:
+          <p> <img src="Help\RoutineView.PNG"/>
+          <p> Note: tab is available if custom RPC capable of
+            getting routine source is installed on the server.
+         </td>
+     </tr>
+
+<tr > <td  colspan=2 bgcolor="#F0F0D0"> <h3>Configuration</h3></td></tr>
+
+<tr>
+    <td valign="top"><a name="PREFERENCES"><h4>Preferences and Configuration</h4></a> </td>
+    <td>
+      <p> Preferences dialog allows user change parameters used by the application:
+
+     <p> <img src="Help\Preferences.PNG"/>
+     <p> Open preferences dialog by the main menu option or clicking  button of the toolbar.
+           </td>
+</tr>
+
+<tr>
+    <td valign="top"><a name="RPC"><h4>Custom RPC</h4></a> </td>
+    <td>
+      <p> Application uses custom RPC for getting data from VistA.
+        Sample code of the RPC can be found in "ZZFMVIEW" folder included in
+        the <a href="https://github.com/git-user-a/VistAGUITools">Git archive</a>
+     <p>RPC registration details:
+<pre>
+  Properties
+          .01      Name                      ZZFMVIEW
+          .02      Tag                       RPC
+          .03      Routine                   ZZFMVIEW
+          .04      Return Type               ARRAY
+          .05      Availability              PUBLIC
+
+  Parameters Definition
+          #    Name         Type         Length       Required
+          ----------------------------------------------------
+          1    OPTION       LITERAL      8            YES
+          2    ARRAY        LIST         32000        NO
+</pre>
+
+           </td>
+</tr>
+
+<tr > <td align=right colspan=2 bgcolor="#F0F0D0">zzFMTools@gmail.com <br>(c) AA, 2019..2025</td></tr>
+  </table>
+
+</BODY>
+</HTML>
