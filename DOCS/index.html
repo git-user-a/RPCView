@@ -8,54 +8,82 @@
   <table width="760" border="0" align="center" cellpadding="0" cellspacing="10"  bgcolor="#FFFBEF">
     <tr>
         <td> <br><a href="https://github.com/git-user-a"><img height=100 valign="top" src="zz.PNG" /></a></td>
-        <td align="right" valign=""><h1><i>VistA GUI Tools</i></h1>
-          2021.01.18
+        <td align="right" valign=""><h1><i>RPC View</i></h1>
+          2025.04.26
         </td>
     </tr>
+
     <tr><td colspan=2 align="right" valign="top"><hr valign="bottom"></td></tr>
+
     <tr>
-      <td valign="top"><strong><em>Applications</em></strong></td>
-          <td>
+        <td valign="top"><strong>Application</strong></td>
+        <td>
+          RPCView is a Windows application designed to simplify
+          management of remote procedures of
+          Veterans Health Information Systems and Technology Architecture (VistA).<br>
+          <p>With RPCView, users can:
           <ul>
-            <li><a href="..\RPCView.html">RPCView</a> - RPC Tester, Viewer, description editor
+              <li> View and modify the definitions of
+                remote procedures (file #8994)
+              <li> Register remote procedures in application contexts.
+              <li> Execute remote procedures.
           </ul>
-        </td>
+          <p>Installation of custom RPC makes possible to review and edit RPC implementation.
+
+          <p>
+            RPCView requires the XWB and FMDC packages to be installed on the server.
+          <p>
+            The application is designed to work in Cache, YottaDB, and GT.M environments,
+            and to connect to VistA instances that use hash tables "VistA", "VistA Demo" and "OSHERA".
+         </td>
     </tr>
 
     <tr>
-      <td valign="top"><strong><em>Liability</em></strong></td>
+      <td valign="top"><strong>Disclaimer</strong></td>
         <td>
-
-    These applications allow user to review the data on server and the client computers.
-    Although they do NOT expected to be used as VistA data editing tools they can be used to edit routines and RPC registration data.
-    Editing is perform by the remote procedure. <br>
-    To avoid the loss of important data or compromizing the DB integrity try these applications on test DB instances to ensure it works correctly with your version of the server software prior to access the critical data.
-    <P>
-    Note that <i>in no event of the data damage or loss the author can be held liable</i>.
+<p>
+The application enables the user to view and modify the data
+on both server and client machines. However, the user should remember that changes to the RPC
+may affect applications that use the RPC. Errors in descriptor can make RPC unusable.
+<p>
+To prevent any damage to your important data, please test the application
+on a non-production DB instance first and make sure it is compatible
+with your server software version before accessing any critical data.
+<p>
+Please note that the application is provided <strong>"AS IS" WITH NO WARRANTIES</strong>
+and the author is not responsible for any data loss or damage
+that may occur as a result of using this application.
         </td>
     </tr>
     <tr>
-      <td valign="top"><strong><em>Privacy Policy</em></strong></td>
-        <td>
-            Applications do not collect user data. <br>
-            Applications may create the log file registering the connection to VistA accounts and RPC execution. This log file is saved on the computer running the application.
-        </td>
-        </tr>
-      <td valign="top"><strong><em>Credits</em></strong></td>
-        <td>
+      <td valign="top"><strong>Privacy Policy</strong></td>
+      <td>
+The application does not collect any personal information from the user.
+It may create a log file that records the connection to VistA accounts
+and RPC execution. This log file is stored on the local machine where the application is running.
+      </td>
+    </tr>
+  </tr>
 
-    The application was written in Delphi (www.embarcadero.com)<br>
-    Server access - VA RPC Broker, FMDC<br>
+    <tr>
+      <td valign="top"><strong>Implementation</strong></td>
+      <td>
+RPCView is built with Embarcadero Delphi 12 (Community Edition).
+VistA Files data is accessed by FileMan Delphi Components (FMDC v1.0) library.
+The information about RPCimplementation is provided by custom RPC.
+Packages SynEdit, VirtualTree (TurboPack) are used for
+routine syntax highlighting and data presentation.
         </td>
-        </tr>
+    </tr>
+
     <tr><td colspan=2 align="right" valign="top"><hr valign="bottom"></td></tr>
 
     <tr>
       <td valign="top"></td>
         <td align="right">
-  
-    zzFMTools@gmail.com<br>
-    (c) AA. 2019..2022
+
+    zzRPCView@gmail.com<br>
+    (c) AA. 2017..2025
 
         </td>
     </tr>
