@@ -5,7 +5,7 @@
 RPCView is a Windows application designed to simplify the management of remote procedures within the Veterans Health Information Systems and Technology Architecture (VistA).
 
 With RPCView, users can:
-- View and modify the definitions of remote procedures (file #8994).
+- Create, View and modify the definitions of remote procedures (file #8994).
 - Register remote procedures in application contexts.
 - Execute remote procedures.
 - Install custom RPCs to review and edit RPC implementations.
