@@ -18,23 +18,23 @@
     <tr>
         <td valign="top"><strong>Application</strong></td>
         <td>
-          RPCView is a Windows application designed to simplify
-          management of remote procedures of
-          Veterans Health Information Systems and Technology Architecture (VistA).<br>
+          RPCView is a Windows application designed to simplify the
+          management of remote procedures within the
+          Veterans Health Information Systems and Technology Architecture 
+          (<a href="https://en.wikipedia.org/wiki/VistA">VistA</a>).<br>
           <p>With RPCView, users can:
           <ul>
-              <li> View and modify the definitions of
-                remote procedures (file #8994)
+              <li> View and modify the definitions of remote procedures (file #8994)
               <li> Register remote procedures in application contexts.
               <li> Execute remote procedures.
           </ul>
           <p>Installation of custom RPC makes possible to review and edit RPC implementation.
 
           <p>
-            RPCView requires the XWB and FMDC packages to be installed on the server.
+            RPCView requires the <strong>XWB</string> and <strong>FMDC</strong> packages to be installed on the server.
           <p>
-            The application is designed to work in Cache, YottaDB, and GT.M environments,
-            and to connect to VistA instances that use hash tables "VistA", "VistA Demo" and "OSHERA".
+            The application is designed to work in <strong>Cache, YottaDB, and GT.M</strong> environments,
+            and to connect to VistA instances using hash tables <string>"VistA", "VistA Demo" and "OSHERA"</strong>.
          </td>
     </tr>
 
@@ -42,25 +42,25 @@
       <td valign="top"><strong>Disclaimer</strong></td>
         <td>
 <p>
-The application enables the user to view and modify the data
-on both server and client machines. However, the user should remember that changes to the RPC
-may affect applications that use the RPC. Errors in descriptor can make RPC unusable.
+The application enables users to view and modify the data
+on both server and client machines. However, changes to the RPC
+may impact applications relyingon it. Errors in descriptor can render an RPC unusable.
 <p>
-To prevent any damage to your important data, please test the application
-on a non-production DB instance first and make sure it is compatible
-with your server software version before accessing any critical data.
+To minimize risk, always test the application
+on a <strong>non-production</strong> database instance first and ensure compatibility
+with your server software version before accessing critical data.
 <p>
 Please note that the application is provided <strong>"AS IS" WITH NO WARRANTIES</strong>
-and the author is not responsible for any data loss or damage
+- the author is <strong>not responsible</strong> for any data loss or damage
 that may occur as a result of using this application.
         </td>
     </tr>
     <tr>
       <td valign="top"><strong>Privacy Policy</strong></td>
       <td>
-The application does not collect any personal information from the user.
-It may create a log file that records the connection to VistA accounts
-and RPC execution. This log file is stored on the local machine where the application is running.
+The application does <strong>not</strong> collect any personal user information.
+It may generate a log file that records the connection to VistA accounts
+and RPC execution. This log file is stored <strong>locally</strong> on the machine where the application is running.
       </td>
     </tr>
   </tr>
@@ -68,22 +68,34 @@ and RPC execution. This log file is stored on the local machine where the applic
     <tr>
       <td valign="top"><strong>Implementation</strong></td>
       <td>
-RPCView is built with Embarcadero Delphi 12 (Community Edition).
-VistA Files data is accessed by FileMan Delphi Components (FMDC v1.0) library.
-The information about RPCimplementation is provided by custom RPC.
-Packages SynEdit, VirtualTree (TurboPack) are used for
-routine syntax highlighting and data presentation.
+RPCView is built with <strong>Embarcadero Delphi 12 (Community Edition).</strong>
+It accesses VistA Files via the <strong> FileMan Delphi Components (FMDC v1.0) library</strong> 
+and retreives RPC implementation details through custom RPC.
+
+<p> Additionally the following packages are utilized for syntax highlighting and data presentation:
+  <ul>
+    <li><strong>SynEdit (TurboPack)</strong>
+    <li><strong>VirtualTree (TurboPack)</strong>
+  </ul> 
         </td>
     </tr>
 
+    <tr>
+      <td valign="top"><strong>Credits</strong></td>
+      <td>
+Special thanks to <a href="https://worldvista.org/">WorldVistA open source community</a> for providing access to 
+test databases, engaging in discussions, and offering invaluable feedback</td>
+    </tr>
     <tr><td colspan=2 align="right" valign="top"><hr valign="bottom"></td></tr>
 
     <tr>
-      <td valign="top"></td>
+      <td valign="top">
+
+      </td>
         <td align="right">
 
     zzRPCView@gmail.com<br>
-    (c) AA. 2017..2025
+    &copy AA. 2017..2025
 
         </td>
     </tr>
