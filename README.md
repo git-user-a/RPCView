@@ -9,7 +9,7 @@ With RPCView, users can:
 - Register remote procedures in application contexts.
 - Execute remote procedures.
 
-RPCView requires the **XWB** and **FMDC** packages to be installed on the server. Custom RPC allows application to review source code of the RPC implementing routine.
+RPCView requires the [**XWB**](https://github.com/WorldVistA/VistA/tree/master/Packages/RPC%20Broker) and [**FMDC**](https://github.com/WorldVistA/VistA/tree/master/Packages/FileMan%20Delphi%20Components) packages to be installed on the server. Custom RPC allows application to review source code of the RPC implementing routine.
 
 The application is designed to work in **Cache, YottaDB, and GT.M** environments and to connect to VistA instances using hash tables `"VistA"`, `"VistA Demo"`, and `"OSHERA"`.
 
