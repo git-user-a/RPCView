@@ -8,9 +8,8 @@ With RPCView, users can:
 - Create, View and modify the definitions of remote procedures (file #8994).
 - Register remote procedures in application contexts.
 - Execute remote procedures.
-- Install custom RPCs to review and edit RPC implementations.
 
-RPCView requires the **XWB** and **FMDC** packages to be installed on the server.
+RPCView requires the **XWB** and **FMDC** packages to be installed on the server. Custom RPC allows application to review source code of the RPC implementing routine.
 
 The application is designed to work in **Cache, YottaDB, and GT.M** environments and to connect to VistA instances using hash tables `"VistA"`, `"VistA Demo"`, and `"OSHERA"`.
 
