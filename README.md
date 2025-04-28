@@ -2,7 +2,7 @@
 **2025.04.26**
 
 ## Application
-RPCView is a Windows application designed to simplify the management of remote procedures within the Veterans Health Information Systems and Technology Architecture (VistA).
+RPCView is a Windows application designed to simplify the management of remote procedures within the [Veterans Health Information Systems and Technology Architecture (VistA)](https://en.wikipedia.org/wiki/VistA).
 
 With RPCView, users can:
 - Create, View and modify the definitions of remote procedures (file #8994).
@@ -24,11 +24,11 @@ To minimize risk, always test the application on a non-production database insta
 The application does not collect any personal user information. It may generate a log file that records connections to VistA accounts and RPC executions. This log file is stored locally on the machine where the application is running.
 
 ## Implementation
-RPCView is built with **Embarcadero Delphi 12 (Community Edition)**. It accesses VistA Files via the **FileMan Delphi Components (FMDC v1.0)** library and retrieves RPC implementation details through custom RPC.
+RPCView is built with [**Embarcadero Delphi 12 (Community Edition)**](https://www.embarcadero.com/free-tools). It accesses VistA Files via the **FileMan Delphi Components (FMDC v1.0)** library and retrieves RPC implementation details through custom RPC.
 
 Additionally, the following packages are utilized for syntax highlighting and data presentation:
 - **SynEdit (TurboPack)**
 - **VirtualTree (TurboPack)**
 
 ## Credits
-Special thanks to the **WorldVistA open-source community** for providing access to test databases, engaging in discussions, and offering invaluable feedback.
+Special thanks to the [**WorldVistA open-source community**](https://worldvista.org/) for providing access to test databases, engaging in discussions, and offering invaluable feedback.
