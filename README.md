@@ -27,8 +27,8 @@ The application does not collect any personal user information. It may generate 
 RPCView is built with [**Embarcadero Delphi 12 (Community Edition)**](https://www.embarcadero.com/free-tools). It accesses VistA Files via the **FileMan Delphi Components (FMDC v1.0)** library and retrieves RPC implementation details through custom RPC.
 
 Additionally, the following packages are utilized for syntax highlighting and data presentation:
-- **SynEdit (TurboPack)**
-- **VirtualTree (TurboPack)**
+- [**SynEdit (TurboPack)**](https://github.com/TurboPack/SynEdit/releases)
+- [**VirtualTree (TurboPack)**](https://github.com/TurboPack/VirtualTreeView)
 
 ## Credits
 Special thanks to the [**WorldVistA open-source community**](https://worldvista.org/) for providing access to test databases, engaging in discussions, and offering invaluable feedback.
