@@ -24,7 +24,7 @@ To minimize risk, always test the application on a non-production database insta
 The application does not collect any personal user information. It may generate a log file that records connections to VistA accounts and RPC executions. This log file is stored locally on the machine where the application is running.
 
 ## Implementation
-RPCView is built with [**Embarcadero Delphi 12 (Community Edition)**](https://www.embarcadero.com/free-tools). It accesses VistA Files via the **FileMan Delphi Components (FMDC v1.0)** library and retrieves RPC implementation details through custom RPC.
+RPCView is built with [**Embarcadero Delphi 12 (Community Edition)**](https://www.embarcadero.com/free-tools). It accesses VistA Files via the [**FileMan Delphi Components (FMDC v1.0)**](https://www.va.gov/vdl/documents/Infrastructure/Fileman_Delphi_Comp_(FMDC)/fmdc1_0gs.pdf) library and retrieves RPC implementation details through custom RPC.
 
 Additionally, the following packages are utilized for syntax highlighting and data presentation:
 - [**SynEdit (TurboPack)**](https://github.com/TurboPack/SynEdit/releases)
