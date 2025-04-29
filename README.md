@@ -1,4 +1,4 @@
-# RPC View
+![RPC View](RPCView-10.png) # RPC View
 **2025.04.26**
 
 ## Application
