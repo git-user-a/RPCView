@@ -1,7 +1,6 @@
 ![RPC View](RPCView-10.png)
 
 ## RPCView Application
-**2025.04.26**
 RPCView is a Windows application designed to simplify the management of remote procedures within the [Veterans Health Information Systems and Technology Architecture (VistA)](https://en.wikipedia.org/wiki/VistA).
 
 With RPCView, users can:
@@ -32,3 +31,4 @@ Additionally, the following packages are utilized for syntax highlighting and da
 
 ## Credits
 Special thanks to the [**WorldVistA open-source community**](https://worldvista.org/) for providing access to test databases, engaging in discussions, and offering invaluable feedback.
+**2025.04.26**
