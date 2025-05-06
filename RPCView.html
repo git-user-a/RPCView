@@ -170,8 +170,9 @@
 
 <tr > <td  colspan=2 bgcolor="#F0F0D0"> <h3>Configuration</h3></td></tr>
 
+
 <tr>
-    <td valign="top"><a name="PREFERENCES"><h4>Preferences and Configuration</h4></a> </td>
+    <td valign="top"><a name="PREFERENCES"><h4>Preferences</h4></a> </td>
     <td>
       <p> Preferences dialog allows user change parameters used by the application:
 
@@ -180,12 +181,35 @@
            </td>
 </tr>
 
+
+<tr>
+    <td valign="top"><a name="INSTALATION"><h4>Installation</h4></a> </td>
+    <td>
+        <p> Place the executable file `RPCView.exe` in a folder where you have write access. </p>
+        <p> This folder should also contain the `Help` folder. </p>
+
+    </td>
+</tr>
+
+<tr>
+    <td valign="top"><a name="STARTUP"><h4>Parameters</h4></a> </td>
+    <td>
+        <p> Application support the following parameters:
+
+        <ul>
+          <li>/Config=your-config-file - name of the file containing configuration parameters.
+            If not specified, application will try to use `RPCView.cfg`</li>
+          <li>/EDIT - enables editing of the RPC implementation routine (requires custom RPC) </li>
+        </ul>
+    </td>
+</tr>
+
+
 <tr>
     <td valign="top"><a name="RPC"><h4>Custom RPC</h4></a> </td>
     <td>
       <p> Application uses custom RPC for getting data from VistA.
-        Sample code of the RPC can be found in "ZZFMVIEW" folder included in
-        the <a href="https://github.com/git-user-a/VistAGUITools">Git archive</a>
+        Sample code of the RPC (file `VWFMVIEW_1_42.m`) is included in the archive.
      <p>RPC registration details:
 <pre>
   Properties
